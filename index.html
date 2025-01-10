@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/estilos.css">
+
+    <title>Que es Dom</title>
+</head>
+
+<body>
+
+
+
+    <div class="text-center rounded-3">
+        <h1 class="color1 titulo-llamativo">Document Object Model (DOM)</h1>
+        <br>
+    </div>
+
+
+
+    <br>
+    <div class="container color3 rounded-3 p-3">
+        <h2 class="text-center">¿Qué es el Document Object Model (DOM)?</h2>
+        <hr style="color: aqua;height: 10px;">
+        <div class="row rounded-3"> <!-- Redondeamos las esquinas de toda la fila -->
+            
+            <!-- Columna de texto -->
+            <div class="col-md-6 rounded-3 mb-4">
+                <p class="fs-4">
+                    El **Document Object Model** (DOM) es una interfaz de programación para documentos HTML y XML. Es
+                    esencial en la creación de aplicaciones web interactivas, ya que permite que los lenguajes de
+                    programación,
+                    como JavaScript, interactúen con los elementos de una página web de manera dinámica.
+                    <br>
+                    El DOM representa la estructura de un documento como un árbol jerárquico de nodos, donde cada nodo
+                    es un objeto
+                    que puede ser manipulado mediante código. En términos simples, el DOM convierte el contenido de la
+                    página web en
+                    una estructura que puede ser entendida y manipulada programáticamente. Esto incluye la capacidad de
+                    modificar
+                    el contenido de los elementos, sus atributos, y la apariencia visual de la página, como también
+                    responder a
+                    eventos del usuario, como clics, desplazamientos o interacciones con formularios.
+                    <br>
+                    La manipulación de estos nodos se realiza principalmente mediante JavaScript. Con JavaScript, los
+                    desarrolladores
+                    pueden acceder, cambiar o eliminar estos nodos en tiempo real, lo que permite crear interfaces de
+                    usuario dinámicas
+                    sin necesidad de recargar la página.
+                    Además, el DOM también permite la manipulación de los estilos de los elementos, como cambiar
+                    colores, tamaños de
+                    fuentes o agregar animaciones. Todo esto se puede lograr sin tener que recargar la página, lo que
+                    mejora
+                    la experiencia del usuario.
+                </p>
+            </div>
+
+            <!-- Columna de imagen -->
+            <div class="col-md-6 rounded-3 mb-4">
+                <img src="/img/004-primerDOM.jpg" alt="Representación del DOM" class="img-fluid rounded-3">
+                <br>
+                <img src="/img/logo.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container text-center">
+        <div class="row">
+            <!-- Columna 1: Componentes del DOM -->
+            <div class="col-xl-4 mb-4 mx-2 color2 rounded-3">
+                <h5>Componentes del DOM</h5>
+                <img width="100%" src="/img/001-imagenDOM.png" alt="" class="rounded-3">
+                <br>
+                <p class="fs-6">
+                    En un documento HTML, los elementos como etiquetas y otros, se representan como nodos en el DOM. El
+                    DOM
+                    permite la manipulación de estos elementos de manera programática. Los principales componentes del
+                    DOM son:
+                </p>
+                <ul class="fs-6 text-start">
+                    <li><strong>Element Node:</strong> Un nodo que representa un elemento HTML.</li>
+                    <li><strong>Text Node:</strong> Un nodo que representa el contenido textual dentro de un elemento
+                        HTML.</li>
+                    <li><strong>Attribute Node:</strong> Un nodo que representa los atributos de un elemento, como `id`,
+                        `class`, `src`, etc.</li>
+                </ul>
+            </div>
+
+            <!-- Columna 2: ¿Por qué el DOM es importante? -->
+            <div class="col-xl-3 mb-4 mx-2 color2 rounded-3">
+                <h5>¿Por qué el DOM es importante?</h5>
+                <img width="100%" src="/img/002-importanciaDOM.jpg" alt="" class="rounded-3">
+                <br>
+                <p class="fs-6">
+                    El DOM permite a los desarrolladores crear páginas web dinámicas, interactivas y responsivas. Es
+                    clave para
+                    poder interactuar con los elementos de la página web en tiempo real. Aquí algunos ejemplos de cómo
+                    se utiliza el DOM:
+                </p>
+                <ul class="fs-6 text-start">
+                    <li><strong>Interacción en tiempo real:</strong> Cambiar el contenido, los estilos y la estructura
+                        de la página
+                        sin necesidad de recargarla.</li>
+                    <li><strong>Respuestas a eventos:</strong> Ejecutar funciones cuando el usuario hace clic en un
+                        botón, escribe
+                        en un formulario o realiza otras acciones.</li>
+                    <li><strong>Acceder y modificar los elementos:</strong> Cambiar atributos (como `src` de una imagen
+                        o `href` de un enlace)
+                        y aplicar nuevos estilos dinámicamente.</li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: ¿Cómo funciona el DOM? -->
+            <div class="col-xl-4 mb-4 mx-2 color2 rounded-3">
+                <h5>¿Cómo puede ayudarnos el DOM?</h5>
+                <img width="100%" src="/img/006-FUNCIONADOM.jpg" alt="" class="rounded-3">
+                <br>
+                <p class="fs-6">
+                    El DOM funciona como una representación estructural de la página web en memoria. El navegador
+                    analiza el código HTML
+                    y lo convierte en un árbol de nodos, donde cada nodo representa una parte del documento (ya sea una
+                    etiqueta, un
+                    texto o un atributo). Esto permite a los desarrolladores acceder, manipular y actualizar cualquier
+                    parte del documento
+                    de forma dinámica sin tener que recargar la página.
+                </p>
+                <ul class="fs-6 text-start">
+                    <li><strong>Interactividad:</strong> Los navegadores permiten la interacción con el DOM a través de
+                        lenguajes de
+                        programación como JavaScript.</li>
+                    <li><strong>Modificación dinámica:</strong> Con el DOM, es posible modificar el contenido de la
+                        página, como añadir
+                        nuevos elementos, cambiar textos, o modificar estilos sin necesidad de recargar la página.</li>
+                </ul>
+            </div>
+
+            <!-- Columna 4: ¿Por qué es útil el DOM en el desarrollo web? -->
+            <div class="col-xl-12 mb-4 mx-2 color2 rounded-3">
+                <h5>¿Por qué es útil el DOM en el desarrollo web?</h5>
+                <img width="100%" src="/img/010-DOMDESARROLLO.jpg" alt="" class="rounded-3">
+                <p class="fs-6">
+                    El **DOM** es una herramienta crucial para los desarrolladores web, ya que permite crear páginas web
+                    interactivas
+                    y dinámicas. Aquí algunos puntos clave sobre su utilidad:
+                </p>
+                <ul class="fs-6 text-start">
+                    <li><strong>Actualización en tiempo real:</strong> Puedes modificar el contenido o los estilos de la
+                        página sin necesidad
+                        de recargarla, lo que mejora la experiencia del usuario.</li>
+                    <li><strong>Manipulación de datos:</strong> Permite modificar los datos en la página, lo que es útil
+                        para trabajar con
+                        formularios, tablas o cualquier contenido dinámico.</li>
+                    <li><strong>Accesibilidad:</strong> El DOM hace que los elementos de la página sean accesibles y
+                        manipulables mediante
+                        scripts, lo que es clave en aplicaciones web modernas como las de una sola página (SPA).</li>
+                    <li><strong>Interactividad:</strong> Permite una mejor respuesta a los eventos del usuario, como
+                        clics, desplazamientos,
+                        teclas presionadas, etc.</li>
+                </ul>
+            </div>
+
+            <div class="col-xl-12 mb-4 mx-2 color2 rounded-3 d-flex flex-column ">
+                <div class="col-xl-12">
+                    <h4>¿Cómo puede ayudarnos el DOM en el campo laboral?</h4>
+                    <p class="fs-6 text-start">
+                        El **DOM** (Document Object Model) es una herramienta esencial en varios campos relacionados con el desarrollo web y la experiencia del usuario. Aquí se detallan algunas aplicaciones clave:
+                    </p>
+                    <h6  class="text-start">1. Desarrolladores Web</h6>
+                    <ul class="fs-6 text-start">
+                        <li><strong>Interactividad Dinámica:</strong> Permite actualizar contenido en tiempo real sin recargar la página.</li>
+                        <li><strong>Manipulación de Contenidos:</strong> Agregar, eliminar o modificar elementos de la página.</li>
+                        <li><strong>Automatización de Tareas:</strong> Automatizar interacciones repetitivas usando JavaScript.</li>
+                    </ul>
+                    <h6  class="text-start">2. Diseñadores de UX/UI</h6>
+                    <ul class="fs-6 text-start">
+                        <li><strong>Mejorar la Usabilidad:</strong> Modificar elementos visuales (colores, fuentes, animaciones) en tiempo real.</li>
+                        <li><strong>Optimización de la Interacción:</strong> Crear experiencias fluidas respondiendo rápidamente a interacciones.</li>
+                        <li><strong>Accesibilidad:</strong> Hacer la página accesible para todos los usuarios, incluidas personas con discapacidades.</li>
+                    </ul>
+                    <h6  class="text-start">3. Desarrolladores de Aplicaciones Móviles</h6>
+                    <ul class="fs-6 text-start">
+                        <li><strong>Desarrollo de SPA:</strong> Crear aplicaciones de una sola página (SPA) con manipulación dinámica del contenido.</li>
+                        <li><strong>Control de la Interactividad:</strong> Gestionar eventos y modificar la interfaz de usuario rápidamente.</li>
+                    </ul>
+                </div>
+                
+                <!-- Imagen debajo del texto y ocupando todo el ancho -->
+                <div class="col-xl-12 mt-3">
+                    <img src="/img/campolaboral.png" alt="Imagen ilustrativa del DOM" class="img-fluid rounded-3 w-100">
+                </div>
+            </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+
+
+.color1{
+    background-color: rgb(0, 0, 0);
+}
+.color3{
+    background-color: rgb(169, 202, 218);
+}
+
+.color2{
+    background-color: rgb(206, 209, 212);
+}
+
+body {
+    background-image: url(/img/007-fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Opcional: hace que la imagen de fondo no se mueva cuando se hace scroll */
+}
+
+.titulo-llamativo {
+    font-size: 3rem; /* Aumenta el tamaño de la fuente */
+    font-weight: bold; /* Pone el texto en negrita */
+    color: #e0d6d2; /* Color brillante (puedes elegir el que prefieras) */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Sombra para darle más impacto */
+    letter-spacing: 2px; /* Espaciado entre letras para mayor estilo */
+    text-transform: uppercase; /* Convierte todo el texto a mayúsculas */
+}
